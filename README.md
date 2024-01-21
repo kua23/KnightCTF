@@ -81,7 +81,18 @@ In the same file as the Vicker IP, if we go to the Export Html option, and scrol
 ### Flag
 KCTF{nikto}
 
-## 
+## Dragon's Binary
+Opening the .bin file with ghidra and then searching for strings
+![image](https://github.com/kua23/KnightCTF/assets/61975172/91d9e307-7f06-4f1d-8ab2-7cb41939f25c)
+
+The answer is the first viewed string
+![image](https://github.com/kua23/KnightCTF/assets/61975172/5934f89a-4924-4dcd-ba77-04c5d7b92b6e)
+
+
+![image](https://github.com/kua23/KnightCTF/assets/61975172/e5cdc295-7e52-4dd9-bdff-a638e15b13a4)
+
+### Flag
+KCTF{letMeIn}
 
 
 
