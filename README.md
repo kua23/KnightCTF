@@ -53,6 +53,28 @@ On then using `binwalk -e flag.png`
 ### Flag 
 KCTF{mul71_l4y3r3d_57360_ec4dacb5}
 
-## 
+## Vicker IP
+First, we filter out the ARP files as they are not much of use.
+
+![image](https://github.com/kua23/KnightCTF/assets/61975172/39be30b8-ad90-4d29-abd9-c3e97803bd6b)
+
+We then export only the HTTP files, and then filter out only the .zip Content types.
+![image](https://github.com/kua23/KnightCTF/assets/61975172/7da04784-c617-4bfd-a8a2-c713f96c0173)
+There was a maybeconfidential.zip file, where the traffic can be examined.
+![image](https://github.com/kua23/KnightCTF/assets/61975172/f09da75c-5b7e-4422-bad6-6c2c029e620c)
+
+We see that the most involved IP addresses were 192.168.1.8 and 192.168.1.7 
+The thing is we dont know which is the attacker and the vulnerable IP. In order to find that out, we can filter out only them and see the first Source and the the Destination.
+![image](https://github.com/kua23/KnightCTF/assets/61975172/20c59cc3-e3c2-4c0a-b30a-2bc08c8284f5).
+Thus, the vulnerable one was 192.169.1.7 while the attacker was 192.168.1.8
+
+### Flag
+KCTF{192.168.1.8_192.168.1.7}
+
+
+
+
+
+
 
 
