@@ -20,4 +20,21 @@ If we go there manually, we get the flag
 
 KCTF{1m_d01n6_17_b3c4u53_1_h4v3_70}
 
-##
+## Kitty
+
+![image](https://github.com/kua23/KnightCTF/assets/61975172/91efe3c5-e2be-4316-bc34-a3051e527bbd)
+We first get a login page, with a username and password. 
+Inspecting the source and typing a gibberish username and password, we get
+![image](https://github.com/kua23/KnightCTF/assets/61975172/68b2900d-6e67-434d-8599-fe3abffef0e5)
+The username and password is actually just `Username` and `Password` respectively.
+Upon logging again, we get into another page
+![image](https://github.com/kua23/KnightCTF/assets/61975172/9ee80982-cf11-49f2-a3a3-bee893919a41)
+If we Inspect the page again, we get 
+![image](https://github.com/kua23/KnightCTF/assets/61975172/fdc17db9-0e65-48b8-83f3-c7d4899eab66)
+We see that, if the cat flag text command is executed, the POST method is executed which means that if we type the command, we get the flag
+![image](https://github.com/kua23/KnightCTF/assets/61975172/267190d7-123e-4064-8ea2-4c73e6022c8e)
+
+### Flag
+`KCTF{Fram3S_n3vE9_L1e_4_toGEtH3R}`
+
+## 
