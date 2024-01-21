@@ -71,6 +71,20 @@ Thus, the vulnerable one was 192.169.1.7 while the attacker was 192.168.1.8
 ### Flag
 KCTF{192.168.1.8_192.168.1.7}
 
+## Basic Enum
+
+Enumeration is the process of finding vulnerabilites in the victim's server by targetting the weak points of their system and gathering information from those points.
+In the same file as the Vicker IP, if we go to the Export Html option, and scroll through the files we see that there are a lot of text/html files and in the midst of them is an application which is encoded. If we check the file name, it says it is a nikto file. A Nikto is a open sorurce web server scanner that performs vulnerability scanning, and hence we get the flag.
+
+![image](https://github.com/kua23/KnightCTF/assets/61975172/7e1bdbc9-d240-4fd5-8094-1fab41a48583)
+
+### Flag
+KCTF{nikto}
+
+## 
+
+
+
 
 
 
