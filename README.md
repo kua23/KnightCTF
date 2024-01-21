@@ -53,6 +53,6 @@ On then using `binwalk -e flag.png`
 ### Flag 
 KCTF{mul71_l4y3r3d_57360_ec4dacb5}
 
-##
+## 
 
 
