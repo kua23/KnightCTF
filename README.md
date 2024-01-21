@@ -37,4 +37,22 @@ We see that, if the cat flag text command is executed, the POST method is execut
 ### Flag
 `KCTF{Fram3S_n3vE9_L1e_4_toGEtH3R}`
 
-## 
+## Oceanic
+
+A .tar file is given which when extracted provides a peaceful.wav file and a clue.png file.
+On using `exiftool` on the .png file, we get an encoded comment.
+![image](https://github.com/kua23/KnightCTF/assets/61975172/e228e685-e659-4da5-9ce7-4ab,c0a113c3b)
+Using (CacheSleuth)[https://www.cachesleuth.com/multidecoder/], we get a base 58 message
+![image](https://github.com/kua23/KnightCTF/assets/61975172/52c68540-b9de-43f8-8ee7-e73b79c18b01)
+which is `theoceanisactuallyreallydeeeepp`.
+Then, on opening the .wav file using the DeepSound tool, and entering the password as the comment, we get a file called flag.png.
+
+On then using `binwalk -e flag.png` 
+![image](https://github.com/kua23/KnightCTF/assets/61975172/835f57b5-6b2f-4119-b4c0-76c9c5982b6b)
+
+### Flag 
+KCTF{mul71_l4y3r3d_57360_ec4dacb5}
+
+##
+
+
